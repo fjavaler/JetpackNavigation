@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jetpack Navigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_registration_fragment">Hello registration fragment</string>
+    <string name="hello_feed_fragment">Hello feed fragment</string>
+</resources>
