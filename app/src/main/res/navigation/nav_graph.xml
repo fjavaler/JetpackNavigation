@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_welcome" >
         <action
             android:id="@+id/action_welcomeFragment_to_registrationFragment"
-            app:destination="@id/registrationFragment2"
+            app:destination="@id/registrationFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
@@ -21,19 +21,18 @@
         <action
             android:id="@+id/action_welcomeFragment_to_homeFragment"
             app:destination="@id/homeFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:launchSingleTop="true"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/registrationFragment2"
+        android:id="@+id/registrationFragment"
         android:name="com.example.jetpacknavigation.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.jetpacknavigation.homeFragment"
+        android:name="com.example.jetpacknavigation.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>
